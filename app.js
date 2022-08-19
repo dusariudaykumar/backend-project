@@ -20,7 +20,7 @@ app.use(notFoundRoute);
 // app.patch("/api/v1/tasks/:id") - update task
 // app.delete("/api/v1/tasks/:id") - delete tasks
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const start = async () => {
   try {
